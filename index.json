@@ -10,6 +10,6 @@
         { "id": "ai-learning", "title": "AI時代のAndroid学習法", "path": "chapters/00-ai-learning.md", "estimatedMinutes": 30 },
         { "id": "web-service-technology-roles-overview", "title": "Webサービスの中身をざっくり理解する", "path": "chapters/00-web-service-technology-roles-overview.md", "estimatedMinutes": 45 }
       ]
-    },
+    }
   ]
 }
