@@ -1,14 +1,103 @@
 {
   "curriculumId": "java-basic",
-  "title": "Java Web開発基礎",
-  "description": "Spring Bootを用いた実践的なWeb API開発を学びます。",
+  "title": "Java基礎カリキュラム",
+  "description": "Javaの基礎文法からオブジェクト指向、標準API、外部資源アクセス、テスト、設計までを学びます。",
   "chapters": [
     {
       "id": "unit0",
       "title": "Unit 0: AI時代の学習法",
       "items": [
-        { "id": "ai-learning", "title": "AI時代のAndroid学習法", "path": "chapters/00-ai-learning.md", "estimatedMinutes": 30 },
-        { "id": "web-service-technology-roles-overview", "title": "Webサービスの中身をざっくり理解する", "path": "chapters/00-web-service-technology-roles-overview.md", "estimatedMinutes": 45 }
+        { "id": "ai-learning", "title": "AI時代のAndroid学習法", "path": "chapters/00-ai-learning.md", "estimatedMinutes": 30 }
+      ]
+    },
+    {
+      "id": "unit1",
+      "title": "Unit 1: はじめに",
+      "items": [
+        { "id": "web-service-technology-roles-overview", "title": "Webサービスの中身をざっくり理解する", "path": "chapters/01-web-service-technology-roles-overview.md", "estimatedMinutes": 45 },
+        { "id": "intro-required-knowledge", "title": "Javaエンジニアとして現場に行くためにはどんな知識が必要？", "path": "chapters/02-intro-required-knowledge.md", "estimatedMinutes": 20 },
+        { "id": "intro-java-capabilities", "title": "Javaでできること", "path": "chapters/03-intro-java-capabilities.md", "estimatedMinutes": 15 },
+        { "id": "intro-goal-setting", "title": "目標設定：作りたいアプリを決めよう", "path": "chapters/04-intro-goal-setting.md", "estimatedMinutes": 15 },
+        { "id": "intro-avoid-dropout", "title": "カリキュラムの挫折を防ぐためにやるべきこと", "path": "chapters/05-intro-avoid-dropout.md", "estimatedMinutes": 20 }
+      ]
+    },
+    {
+      "id": "unit2",
+      "title": "Unit 2: Javaの準備と基礎文法",
+      "items": [
+        { "id": "basics-environment-setup", "title": "環境構築", "path": "chapters/06-basics-environment-setup.md", "estimatedMinutes": 45 },
+        { "id": "basics-curriculum-guide", "title": "カリキュラムの進め方", "path": "chapters/07-basics-curriculum-guide.md", "estimatedMinutes": 20 },
+        { "id": "basics-question-format", "title": "質問フォーマット", "path": "chapters/08-basics-question-format.md", "estimatedMinutes": 15 },
+        { "id": "basics-program-writing", "title": "プログラムの書き方", "path": "chapters/09-basics-program-writing.md", "estimatedMinutes": 60 },
+        { "id": "basics-expressions-operators", "title": "式と演算子", "path": "chapters/10-basics-expressions-operators.md", "estimatedMinutes": 60 },
+        { "id": "basics-conditions-loops", "title": "条件分岐と繰り返し", "path": "chapters/11-basics-conditions-loops.md", "estimatedMinutes": 60 },
+        { "id": "basics-arrays", "title": "配列", "path": "chapters/12-basics-arrays.md", "estimatedMinutes": 45 },
+        { "id": "basics-methods", "title": "メソッド", "path": "chapters/13-basics-methods.md", "estimatedMinutes": 60 },
+        { "id": "basics-multi-class-development", "title": "複数クラスを用いた開発", "path": "chapters/14-basics-multi-class-development.md", "estimatedMinutes": 60 }
+      ]
+    },
+    {
+      "id": "unit3",
+      "title": "Unit 3: オブジェクト指向",
+      "items": [
+        { "id": "oop-start", "title": "オブジェクト指向を始めよう", "path": "chapters/15-oop-start.md", "estimatedMinutes": 60 },
+        { "id": "oop-instances-classes", "title": "インスタンスとクラス", "path": "chapters/16-oop-instances-classes.md", "estimatedMinutes": 60 },
+        { "id": "oop-class-mechanisms", "title": "さまざまなクラス機構", "path": "chapters/17-oop-class-mechanisms.md", "estimatedMinutes": 60 },
+        { "id": "oop-inheritance", "title": "継承", "path": "chapters/18-oop-inheritance.md", "estimatedMinutes": 60 },
+        { "id": "oop-advanced-inheritance", "title": "高度な継承", "path": "chapters/19-oop-advanced-inheritance.md", "estimatedMinutes": 60 },
+        { "id": "oop-polymorphism", "title": "多様性", "path": "chapters/20-oop-polymorphism.md", "estimatedMinutes": 60 },
+        { "id": "oop-encapsulation", "title": "カプセル化", "path": "chapters/21-oop-encapsulation.md", "estimatedMinutes": 60 }
+      ]
+    },
+    {
+      "id": "unit4",
+      "title": "Unit 4: 標準API活用",
+      "items": [
+        { "id": "api-core-classes", "title": "Javaを支えるクラスたち", "path": "chapters/22-api-core-classes.md", "estimatedMinutes": 60 },
+        { "id": "api-strings-dates", "title": "文字列と日付の扱い", "path": "chapters/23-api-strings-dates.md", "estimatedMinutes": 60 },
+        { "id": "api-collections", "title": "コレクション", "path": "chapters/24-api-collections.md", "estimatedMinutes": 60 },
+        { "id": "api-exceptions", "title": "例外", "path": "chapters/25-api-exceptions.md", "estimatedMinutes": 60 }
+      ]
+    },
+    {
+      "id": "unit5",
+      "title": "Unit 5: 実践編：さまざまな基本機能",
+      "items": [
+        { "id": "practice-instance-basics", "title": "インスタンスの基本操作", "path": "chapters/26-practice-instance-basics.md", "estimatedMinutes": 60 },
+        { "id": "practice-class-types", "title": "さまざまな種類のクラス", "path": "chapters/27-practice-class-types.md", "estimatedMinutes": 60 },
+        { "id": "practice-lambdas", "title": "関数とラムダ式", "path": "chapters/28-practice-lambdas.md", "estimatedMinutes": 60 },
+        { "id": "practice-jvm-reflection", "title": "JVM制御とリフレクション", "path": "chapters/29-practice-jvm-reflection.md", "estimatedMinutes": 60 },
+        { "id": "practice-third-party-libraries", "title": "非標準ライブラリの活用", "path": "chapters/30-practice-third-party-libraries.md", "estimatedMinutes": 60 }
+      ]
+    },
+    {
+      "id": "unit6",
+      "title": "Unit 6: 実践編：外部資源へのアクセス",
+      "items": [
+        { "id": "external-file-operations", "title": "ファイルの操作", "path": "chapters/31-external-file-operations.md", "estimatedMinutes": 60 },
+        { "id": "external-file-formats", "title": "さまざまなファイル形式", "path": "chapters/32-external-file-formats.md", "estimatedMinutes": 60 },
+        { "id": "external-network-access", "title": "ネットワークアクセス", "path": "chapters/33-external-network-access.md", "estimatedMinutes": 60 },
+        { "id": "external-database-access", "title": "データベースアクセス", "path": "chapters/34-external-database-access.md", "estimatedMinutes": 60 }
+      ]
+    },
+    {
+      "id": "unit7",
+      "title": "Unit 7: 実践編：効率的な開発",
+      "items": [
+        { "id": "dev-tools", "title": "基本的な開発ツール", "path": "chapters/35-dev-tools.md", "estimatedMinutes": 45 },
+        { "id": "dev-unit-testing", "title": "単体テストとアサーション", "path": "chapters/36-dev-unit-testing.md", "estimatedMinutes": 60 },
+        { "id": "dev-metrics-refactoring", "title": "メトリクスとリファクタリング", "path": "chapters/37-dev-metrics-refactoring.md", "estimatedMinutes": 60 },
+        { "id": "dev-source-control", "title": "ソースコードの管理と共有", "path": "chapters/38-dev-source-control.md", "estimatedMinutes": 60 },
+        { "id": "dev-agile", "title": "アジャイルな開発", "path": "chapters/39-dev-agile.md", "estimatedMinutes": 45 }
+      ]
+    },
+    {
+      "id": "unit8",
+      "title": "Unit 8: 実践編：より高度な設計",
+      "items": [
+        { "id": "advanced-design-patterns", "title": "設計の原則とデザインパターン", "path": "chapters/40-advanced-design-patterns.md", "estimatedMinutes": 60 },
+        { "id": "advanced-threads", "title": "スレッドによる並列処理", "path": "chapters/41-advanced-threads.md", "estimatedMinutes": 60 },
+        { "id": "advanced-ui-control", "title": "ユーザーインタフェース制御", "path": "chapters/42-advanced-ui-control.md", "estimatedMinutes": 60 }
       ]
     }
   ]
