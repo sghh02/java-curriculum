@@ -1,0 +1,14 @@
+{
+  "curriculumId": "java-basic",
+  "title": "Java Web開発基礎",
+  "description": "Spring Bootを用いた実践的なWeb API開発を学びます。",
+  "chapters": [
+    {
+      "id": "unit0",
+      "title": "Unit 0: AI時代の学習法",
+      "items": [
+        { "id": "ai-learning", "title": "AI時代のAndroid学習法", "path": "chapters/00-ai-learning.md", "estimatedMinutes": 30 }
+      ]
+    },
+  ]
+}
