@@ -3,7 +3,7 @@
 
 ## 課題：第10章 基本的な開発ツール
 
-[https://forms.gle/j3zmhsXSvkgTv4fV7](https://forms.gle/j3zmhsXSvkgTv4fV7)
+この章を学習したら、以下の練習問題に取り組んでください。
 
 ## 練習問題1
 
@@ -13,21 +13,33 @@
 package jp.miyabilink.atm;
 
 public class Bank {
-		String name;
-		String address;
-		public void addAccount(String owner, int initZandaka) {}
-		public static void main(String(l args) {
-			System.out.printin("試験用のメインメソッドです")；
-		}
+    String name;
+    String address;
+
+    public void addAccount(String owner, int initZandaka) {
+    }
+
+    public static void main(String[] args) {
+        System.out.println("試験用のメインメソッドです");
+    }
 }
 ```
 
 ## 練習問題2
 
-練習問題2で作成したソースファイルをコンパイルし、atm.jarを生成してください。
+練習問題1で作成したソースファイルをコンパイルし、atm.jarを生成してください。
 このとき、マニフェストファイルに Main-Class としてBankクラスを指定してください。
 
 ## 練習問題3
 
 練習問題2で作成したJARファイルをjavaコマンドにて実行してください。
 ただし実行の際にjar オプションを利用してください。
+
+## AIに質問する（この章の例）
+
+次の例をそのままAIに投げてOKです（必要なら自分のコード/エラーに置き換えてください）。
+
+- 「『基本的な開発ツール』を初心者向けに、たとえ話つきで説明して。最後に要点を3つにまとめて」
+- 「この章の内容で理解確認クイズを5問作って（解答は最後にまとめて）」
+- 「この章の練習問題で詰まった。答えを丸ごとではなく、方針→ヒント→確認質問の順で教えて」
+- 「Javadocを書く目的と、最低限書くべき要素を教えて」

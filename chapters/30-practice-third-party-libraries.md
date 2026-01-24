@@ -3,7 +3,7 @@
 
 ## 課題：第5章 非標準ライブラリの活用
 
-[https://docs.google.com/forms/d/e/1FAIpQLScKbAXDGcL8A5Gs5ugjlA5EHYGDlyXIbfg1NJ2KQAAwe7J9UA/viewform?usp=sf_link](https://docs.google.com/forms/d/e/1FAIpQLScKbAXDGcL8A5Gs5ugjlA5EHYGDlyXIbfg1NJ2KQAAwe7J9UA/viewform?usp=sf_link)
+この章を学習したら、以下の練習問題に取り組んでください。
 
 ## 練習問題1
 
@@ -33,3 +33,12 @@ c:*javalibフォルダにあるとします。
 その際、commons-langに含まれる以下のクラスを利用してください。
 各クラスの詳細については、commons-langの公式Webサイトに掲載されているユーザーガイド(APIリファレンス)を参照してください。
 HashCodeBuilder EqualsBuilder CompareToBuilder
+
+## AIに質問する（この章の例）
+
+次の例をそのままAIに投げてOKです（必要なら自分のコード/エラーに置き換えてください）。
+
+- 「『非標準ライブラリの活用』を初心者向けに、たとえ話つきで説明して。最後に要点を3つにまとめて」
+- 「この章の内容で理解確認クイズを5問作って（解答は最後にまとめて）」
+- 「この章の練習問題で詰まった。答えを丸ごとではなく、方針→ヒント→確認質問の順で教えて」
+- 「外部ライブラリ導入時に確認すべき点（ライセンス/バージョン/依存関係）を教えて」

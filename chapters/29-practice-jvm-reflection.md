@@ -3,7 +3,7 @@
 
 ## 課題：第4章 JVM制御とリフレクション
 
-[https://docs.google.com/forms/d/e/1FAIpQLSeczpMdBElca9eHf2fP3Ew4IiI0TKj_cBZREMD7DmSHTDj7wg/viewform?usp=sf_link](https://docs.google.com/forms/d/e/1FAIpQLSeczpMdBElca9eHf2fP3Ew4IiI0TKj_cBZREMD7DmSHTDj7wg/viewform?usp=sf_link)
+この章を学習したら、以下の練習問題に取り組んでください。
 
 ## 練習問題1
 
@@ -34,3 +34,12 @@
 
 - ロケール言語が日本語の場合・・・・「メモリを消費しています…」
 - ロケール言語が日本語以外の場合・・・「eating memory …」
+
+## AIに質問する（この章の例）
+
+次の例をそのままAIに投げてOKです（必要なら自分のコード/エラーに置き換えてください）。
+
+- 「『JVM制御とリフレクション』を初心者向けに、たとえ話つきで説明して。最後に要点を3つにまとめて」
+- 「この章の内容で理解確認クイズを5問作って（解答は最後にまとめて）」
+- 「この章の練習問題で詰まった。答えを丸ごとではなく、方針→ヒント→確認質問の順で教えて」
+- 「リフレクションは何が危険で、いつ使うべきかを具体例で教えて」

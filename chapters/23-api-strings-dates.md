@@ -3,7 +3,7 @@
 
 ## 課題：chapter 15 文字列と日付の扱い
 
-[https://forms.gle/8Vo7bxvs997sbroG7](https://forms.gle/8Vo7bxvs997sbroG7)
+この章を学習したら、以下の練習問題に取り組んでください。
 
 ## 練習問題1
 
@@ -27,3 +27,12 @@ main メソッドのあるクラスのクラス名は ExtensionExtractor とす�
 ```java
 List<String> customerList = new ArrayList<>(Arrays.asList("西川 貴浩,xxxx@gmail.com,041-0604,北海道函館市元村町", "浅井 唯,xxxx@yahoo.co.jp,144-0034,東京都大田区西糀谷", "浜口 英則,yyyy@gmail.com,880-0879,宮崎県宮崎市宮崎駅東"));List<String> customerList = new ArrayList<>(Arrays.asList("鈴木 明人,xxxx@gmail.com,041-0604,北海道函館市元村町", "浅井 流々,xxxx@yahoo.co.jp,144-0034,東京都大田区西糀谷", "浜口 英俊,yyyy@gmail.com,880-0879,宮崎県宮崎市宮崎駅東"));
 ```
+
+## AIに質問する（この章の例）
+
+次の例をそのままAIに投げてOKです（必要なら自分のコード/エラーに置き換えてください）。
+
+- 「『文字列と日付の扱い』を初心者向けに、たとえ話つきで説明して。最後に要点を3つにまとめて」
+- 「この章の内容で理解確認クイズを5問作って（解答は最後にまとめて）」
+- 「この章の練習問題で詰まった。答えを丸ごとではなく、方針→ヒント→確認質問の順で教えて」
+- 「`String` の比較（`==` と `equals`）の違いを、バグ例つきで説明して」
