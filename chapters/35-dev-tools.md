@@ -1,33 +1,31 @@
 # 基本的な開発ツール
 
-この章では「動く」「テストが回る」「依存関係を追加できる」状態を作ります。
+この章では、制作物（ToDo管理）を「テストが回る」「依存関係を追加できる」状態にします。
 細かい暗記は不要で、困ったらコマンド結果やエラーをAIに貼ってOKです。
 
 ## ゴール
 
-- Maven（`mvnw`）で起動/テストできる
+- Mavenでテストできる
 - `pom.xml` を読んで、依存関係を追加できる
 - つまずいたら「状況＋エラー＋試したこと」を出せる
 
 ## 最小コマンド（Maven）
 
-Spring Boot（Unit 9）では Maven を使います。
+`mvnw`（Maven Wrapper）がある場合は `./mvnw`、ない場合は `mvn` を使います。
 
 ```bash
-# Maven wrapper の確認
+# Maven の確認
 ./mvnw -v
 
 # テスト
 ./mvnw test
 
-# 起動
-./mvnw spring-boot:run
-
-# ビルド（テストなし）
+# ビルド（テストなし、任意）
 ./mvnw -DskipTests package
 ```
 
 Windowsの場合は `./mvnw` の代わりに `mvnw.cmd` を使ってください。
+`mvnw` が無い場合は `mvn -v` / `mvn test` でOKです。
 
 ## 依存関係（`pom.xml`）の最小理解
 
@@ -39,17 +37,22 @@ Windowsの場合は `./mvnw` の代わりに `mvnw.cmd` を使ってください
 
 ## 練習問題
 
-### 練習問題1：Spring Bootプロジェクトでコマンドを動かす
+### 練習問題1：ToDo管理（コンソール版）をMavenでテストできるようにする
 
-Unit 9 で作った `todo-api` プロジェクトで、次を実行してください。
+次の章（単体テスト）や、制作物のテスト（JUnit）に備えて、まず「テストが回る」状態を作ってください。
 
-- `./mvnw test`
-- `./mvnw spring-boot:run`
+- `mvn test` または `./mvnw test` が実行できる
+- `src/test/java` にテストクラスを置ける
 
-### 練習問題2：依存関係を1つ追加して動作確認する（任意）
+※プロジェクトがMavenではない場合は、IDEでMavenプロジェクトを作って既存コードを移すのが手早いです。
+手順はIDEによって違うので、AIに「IDE名」「今のフォルダ構成」「やりたいこと」を貼って手順を確認してください。
 
-Spring Initializr で追加し忘れた依存があれば、`pom.xml` に追加して `./mvnw test` が通ることを確認してください。
-（例：`spring-boot-starter-validation`、`spring-boot-starter-data-jpa` など）
+### 練習問題2：依存関係を追加して動作確認する（任意）
+
+次の依存関係を追加し、`mvn test` が動くことを確認してください。
+
+- JUnit 5（テスト用）
+- H2 Database（Unit 6 のDB対応をやる場合）
 
 ## AIに質問する（この章の例）
 

@@ -9,7 +9,7 @@
 
 ## 前提
 
-- 接続先のDBやJDBCドライバの準備は、`データベースアクセス` の章で行った手順をそのまま使ってください（H2を想定）
+- 接続先のDBやJDBCドライバの準備は、`データベースアクセス` の章で行った手順をそのまま使ってください（例：H2の `jdbc:h2:file:./data/todo`, user=`sa`, password=空）
 - 前章までの「コンソール版ToDo（ArrayList＋例外＋日時）」が動いていること
 
 ## この章での方針
@@ -116,7 +116,7 @@ public class InMemoryTaskRepository implements TaskRepository {
 
 ### `JdbcTaskRepository.java`（DB実装）
 
-H2の例です。`JDBC_URL` は `データベースアクセス` の章と同じ値にしてください。
+H2の例です。`JDBC_URL` は `データベースアクセス` の章と同じ値にしてください（例：`jdbc:h2:file:./data/todo`）。
 
 ```java
 package com.example.todo;
@@ -298,7 +298,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         TaskRepository repository = new JdbcTaskRepository(
-                "jdbc:h2:~/rpgdb",
+                "jdbc:h2:file:./data/todo",
                 "sa",
                 ""
         );
