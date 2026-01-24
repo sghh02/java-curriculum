@@ -243,8 +243,11 @@ public class TaskService {
     }
 
     public Task get(Long id) {
-        return taskRepository.findById(id)
-                .orElseThrow(() -> new TaskNotFoundException(id));
+        Task task = taskRepository.findById(id).orElse(null);
+        if (task == null) {
+            throw new TaskNotFoundException(id);
+        }
+        return task;
     }
 
     public Task update(Long id, String title, boolean completed) {
@@ -304,6 +307,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.net.URI;
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -317,7 +321,11 @@ public class TaskController {
 
     @GetMapping
     public List<TaskResponse> list() {
-        return taskService.list().stream().map(TaskController::toResponse).toList();
+        List<TaskResponse> responses = new ArrayList<>();
+        for (Task task : taskService.list()) {
+            responses.add(toResponse(task));
+        }
+        return responses;
     }
 
     @PostMapping

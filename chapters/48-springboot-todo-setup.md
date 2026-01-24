@@ -35,7 +35,8 @@ Spring Initializrで次の内容のプロジェクトを作成してください
 
 ### 練習問題2：IDEに取り込む
 
-zipを解凍し、IDEにプロジェクトを取り込みます。
+zipを解凍し、IDEでプロジェクトフォルダを開きます（Mavenプロジェクトとして認識させます）。
+手順はIDEにより違うので、困ったら「IDE名」と「今の状態（画面/エラー）」をAIに貼って聞いてOKです。
 
 - IntelliJ IDEA：解凍したフォルダを `Open`
 - Eclipse：`Import` → `Maven` → `Existing Maven Projects`

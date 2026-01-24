@@ -1,7 +1,7 @@
 {
   "curriculumId": "java-basic",
   "title": "Java基礎カリキュラム",
-  "description": "Javaの基礎文法からオブジェクト指向、標準API、外部資源アクセス、テスト、設計、Spring BootによるToDo管理API開発と既存アプリの改修までを学びます。",
+  "description": "Javaの基礎文法からオブジェクト指向、標準API、データベースアクセス、テスト、設計、Spring BootによるToDo管理API開発と既存アプリの改修までを学びます。",
   "chapters": [
     {
       "id": "unit0",
@@ -61,22 +61,17 @@
     },
     {
       "id": "unit5",
-      "title": "Unit 5: 実践編：さまざまな基本機能",
+      "title": "Unit 5: 補講（任意）：Javaの発展トピック",
       "items": [
         { "id": "practice-instance-basics", "title": "インスタンスの基本操作", "path": "chapters/26-practice-instance-basics.md", "estimatedMinutes": 60 },
         { "id": "practice-class-types", "title": "さまざまな種類のクラス", "path": "chapters/27-practice-class-types.md", "estimatedMinutes": 60 },
-        { "id": "practice-lambdas", "title": "関数とラムダ式", "path": "chapters/28-practice-lambdas.md", "estimatedMinutes": 60 },
-        { "id": "practice-jvm-reflection", "title": "JVM制御とリフレクション", "path": "chapters/29-practice-jvm-reflection.md", "estimatedMinutes": 60 },
-        { "id": "practice-third-party-libraries", "title": "非標準ライブラリの活用", "path": "chapters/30-practice-third-party-libraries.md", "estimatedMinutes": 60 }
+        { "id": "practice-lambdas", "title": "関数とラムダ式", "path": "chapters/28-practice-lambdas.md", "estimatedMinutes": 60 }
       ]
     },
     {
       "id": "unit6",
-      "title": "Unit 6: 実践編：外部資源へのアクセス",
+      "title": "Unit 6: 実践編：データベースアクセス（JDBC）",
       "items": [
-        { "id": "external-file-operations", "title": "ファイルの操作", "path": "chapters/31-external-file-operations.md", "estimatedMinutes": 60 },
-        { "id": "external-file-formats", "title": "さまざまなファイル形式", "path": "chapters/32-external-file-formats.md", "estimatedMinutes": 60 },
-        { "id": "external-network-access", "title": "ネットワークアクセス", "path": "chapters/33-external-network-access.md", "estimatedMinutes": 60 },
         { "id": "external-database-access", "title": "データベースアクセス", "path": "chapters/34-external-database-access.md", "estimatedMinutes": 60 },
         { "id": "project-todo-jdbc", "title": "制作物：ToDo管理（コンソール版）をDB（JDBC）対応する", "path": "chapters/46-project-todo-jdbc.md", "estimatedMinutes": 120 }
       ]
@@ -87,7 +82,6 @@
       "items": [
         { "id": "dev-tools", "title": "基本的な開発ツール", "path": "chapters/35-dev-tools.md", "estimatedMinutes": 45 },
         { "id": "dev-unit-testing", "title": "単体テストとアサーション", "path": "chapters/36-dev-unit-testing.md", "estimatedMinutes": 60 },
-        { "id": "dev-metrics-refactoring", "title": "メトリクスとリファクタリング", "path": "chapters/37-dev-metrics-refactoring.md", "estimatedMinutes": 60 },
         { "id": "dev-source-control", "title": "ソースコードの管理と共有", "path": "chapters/38-dev-source-control.md", "estimatedMinutes": 60 },
         { "id": "project-todo-testing", "title": "制作物：ToDo管理（コンソール版）をJUnitでテストする", "path": "chapters/47-project-todo-testing.md", "estimatedMinutes": 90 }
       ]

@@ -128,8 +128,8 @@ DB（JDBC）に依存したテストは準備が大変になりがちです。�
 
 ### 練習問題3：テストを実行する
 
-Mavenプロジェクトの場合は `mvn test`、Gradleの場合は `gradle test` で実行できます。
-Eclipseの場合は、テストクラスを右クリックして `Run As` → `JUnit Test` を実行してください。
+Mavenプロジェクトの場合は `mvn test`（または `./mvnw test`）、Gradleの場合は `gradle test` で実行できます。
+IDEからテストクラスを実行してもOKです（やり方はIDEにより異なります）。
 
 ## 完了条件（チェックリスト）
 

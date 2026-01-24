@@ -6,9 +6,7 @@ function normalizeNewlines(text) {
 }
 
 function shouldSkipItem(item) {
-  return new Set(["ai-learning", "basics-curriculum-guide", "basics-question-format"]).has(
-    item.id,
-  );
+  return new Set(["ai-learning", "basics-curriculum-guide"]).has(item.id);
 }
 
 function buildPrompts({ id, title }) {
@@ -51,7 +49,7 @@ function buildPrompts({ id, title }) {
     : title.includes("ファイル形式") ? "「CSV/JSONの読み書きでハマる点（文字コード/改行/エスケープ）を教えて」"
     : title.includes("ネットワークアクセス") ? "「HTTPステータスコード（200/400/404/500）の意味を、API例で説明して」"
     : title.includes("データベースアクセス") ? "「SQLインジェクションを、悪い例→良い例（PreparedStatement）で説明して」"
-    : title.includes("開発ツール") ? "「Javadocを書く目的と、最低限書くべき要素を教えて」"
+    : title.includes("開発ツール") ? "「Maven（`mvnw`）でよく使うコマンドと、詰まったときの確認順を教えて」"
     : title.includes("単体テスト") ? "「テストケースを増やす観点（正常/境界/異常）を、この章の題材で整理して」"
     : title.includes("リファクタリング") ? "「このコードの重複/臭いを指摘して、壊さずに直す手順を提案して」"
     : title.includes("ソースコードの管理") ? "「gitで安全に作業する手順（branch/commit/push）を、この課題向けに説明して」"
@@ -115,4 +113,3 @@ main().catch((error) => {
   console.error(error);
   process.exit(1);
 });
-
