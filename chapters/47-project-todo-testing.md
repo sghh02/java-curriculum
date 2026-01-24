@@ -27,21 +27,7 @@
 - 正常系：追加できる、一覧に出る、完了にできる、削除できる
 - 異常系：空タイトルはエラー、存在しないIDはエラー
 
-JUnit 5 の例：
-
-```java
-import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
-
-class TodoServiceTest {
-
-    @Test
-    void add_createsTask() {
-        // TODO
-    }
-}
-```
+※JUnit 5 の基本形（`@Test` と `assert...`）は、前章「単体テストとアサーション」を参照してください。
 
 ## 実装例（JUnit 5）
 
