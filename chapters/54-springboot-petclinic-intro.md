@@ -86,7 +86,20 @@ Petclinicは、ローカル用にH2を使っていたり、初期データをSQL
 
 次の例をそのままAIに投げてOKです（必要なら自分の状況に置き換えてください）。
 
-- 「Spring Petclinicのコードを読みたい。`Owner` に関連するHTTP→Service→Repository→DBの流れを追うために、IDE検索で探すべきキーワードを順番に教えて」
-- 「`@Controller` と `@RestController` が混乱してる。Petclinic（画面あり）を例に、役割の違いを説明して」
-- 「`./mvnw test` が失敗した。エラー全文を貼るので、原因候補と確認手順を優先度順に出して（まずはヒントから）」
-- 「次章で `/api/owners/count` を作りたい。どの層に何を足すべきか（Repository/Service/Controller）を、最小構成で提案して」
+```text
+「Spring Petclinicのコードを読みたい。`Owner` に関連するHTTP→Service→Repository→DBの流れを追うために、IDE検索で探すべきキーワードを順番に教えて」
+「`@Controller` と `@RestController` が混乱してる。Petclinic（画面あり）を例に、役割の違いを説明して」
+「`./mvnw test` が失敗した。エラー全文を貼るので、原因候補と確認手順を優先度順に出して（まずはヒントから）」
+「次章で `/api/owners/count` を作りたい。どの層に何を足すべきか（Repository/Service/Controller）を、最小構成で提案して」
+```
+
+---
+
+## 課題提出
+
+この章には提出課題があります。
+
+1. 上記のハンズオン課題を完了する
+2. GitHub で `feature/54-springboot-petclinic-intro` ブランチを作成し、PRを作成
+3. [AI総合レビューツール](https://ai.studio/apps/drive/1AMqIqU4Bio4te7AWh5dly1Qzp7CesqP9?fullscreenApplet=true) でレビューを実行
+4. 問題がなければ、スプレッドシートに **PR URL** と **完了日** を記入

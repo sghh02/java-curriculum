@@ -72,7 +72,9 @@ function buildSection({ id, title }) {
   lines.push("");
   lines.push("次の例をそのままAIに投げてOKです（必要なら自分のコード/エラーに置き換えてください）。");
   lines.push("");
-  for (const prompt of prompts) lines.push(`- ${prompt}`);
+  lines.push("```text");
+  for (const prompt of prompts) lines.push(prompt);
+  lines.push("```");
 
   return lines.join("\n");
 }

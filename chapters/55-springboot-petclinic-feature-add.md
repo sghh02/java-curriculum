@@ -84,7 +84,20 @@ APIだけでOKならスキップして構いません。余力があればやっ
 
 次の例をそのままAIに投げてOKです（必要なら自分のコード/エラーに置き換えてください）。
 
-- 「Petclinicで `OwnerRepository` はどんな型（`JpaRepository` など）を継承してる？件数取得は `count()` で良い？確認ポイントを教えて」
-- 「`GET /api/owners/count` の設計を相談したい。どの層（Repository/Service/Controller）に何を置くのが最小で、テストしやすい？」
-- 「`Pet.name` に `@Size(min=3,max=50)` を付けた。どこで `@Valid` が効いて、どの入力でエラーになるかを確認する手順を教えて」
-- 「MockMvcで `/api/owners/count` をテストしたい。`@WebMvcTest` と `@SpringBootTest` の使い分けを、今回の課題に合わせて提案して」
+```text
+「Petclinicで `OwnerRepository` はどんな型（`JpaRepository` など）を継承してる？件数取得は `count()` で良い？確認ポイントを教えて」
+「`GET /api/owners/count` の設計を相談したい。どの層（Repository/Service/Controller）に何を置くのが最小で、テストしやすい？」
+「`Pet.name` に `@Size(min=3,max=50)` を付けた。どこで `@Valid` が効いて、どの入力でエラーになるかを確認する手順を教えて」
+「MockMvcで `/api/owners/count` をテストしたい。`@WebMvcTest` と `@SpringBootTest` の使い分けを、今回の課題に合わせて提案して」
+```
+
+---
+
+## 課題提出
+
+この章には提出課題があります。
+
+1. 上記のハンズオン課題を完了する
+2. GitHub で `feature/55-springboot-petclinic-feature-add` ブランチを作成し、PRを作成
+3. [AI総合レビューツール](https://ai.studio/apps/drive/1AMqIqU4Bio4te7AWh5dly1Qzp7CesqP9?fullscreenApplet=true) でレビューを実行
+4. 問題がなければ、スプレッドシートに **PR URL** と **完了日** を記入
