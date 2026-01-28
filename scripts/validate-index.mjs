@@ -5,6 +5,33 @@ function isPlainObject(value) {
   return value !== null && typeof value === "object" && !Array.isArray(value);
 }
 
+function escapeRegExp(str) {
+  return String(str).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function extractH2Section(markdown, headingText) {
+  const lines = markdown.split(/\r?\n/);
+  const headingPattern = new RegExp(`^##\\s+${escapeRegExp(headingText)}\\s*$`);
+
+  let start = -1;
+  for (let i = 0; i < lines.length; i++) {
+    if (headingPattern.test(lines[i])) {
+      start = i;
+      break;
+    }
+  }
+  if (start === -1) return null;
+
+  let end = lines.length;
+  for (let i = start + 1; i < lines.length; i++) {
+    if (lines[i].startsWith("## ")) {
+      end = i;
+      break;
+    }
+  }
+  return lines.slice(start, end).join("\n");
+}
+
 function analyzeMarkdown(markdown) {
   const lines = markdown.replace(/^\uFEFF/, "").split(/\r?\n/);
   let inFence = false;
@@ -117,6 +144,7 @@ async function main() {
       const id = item.id;
       const title = item.title;
       const relativePath = item.path;
+      const hasAssignment = item.hasAssignment;
 
       if (typeof id !== "string" || id.trim() === "") {
         addError(`index.json: ${itemLabel}.id must be a non-empty string`);
@@ -135,6 +163,10 @@ async function main() {
       if (typeof relativePath !== "string" || relativePath.trim() === "") {
         addError(`index.json: ${itemLabel}.path must be a non-empty string`);
         continue;
+      }
+
+      if (typeof hasAssignment !== "boolean") {
+        addError(`index.json: ${itemLabel}.hasAssignment must be a boolean`);
       }
 
       if (path.isAbsolute(relativePath) || relativePath.includes("..")) {
@@ -181,6 +213,26 @@ async function main() {
           `${relativePath}: title mismatch (index.json: "${expected}" / H1: "${actual}")`,
         );
       }
+
+      // Ensure assignment/completion section exists, and branch naming follows the curriculum rule.
+      if (typeof hasAssignment === "boolean") {
+        if (hasAssignment) {
+          const section = extractH2Section(markdown, "課題提出");
+          if (!section) {
+            addError(`${relativePath}: missing required section \`## 課題提出\``);
+          } else {
+            const expectedBranch = `feature/${path.basename(relativePath, ".md")}`;
+            if (!section.includes(expectedBranch)) {
+              addError(`${relativePath}: 課題提出 must include branch name \`${expectedBranch}\``);
+            }
+          }
+        } else {
+          const section = extractH2Section(markdown, "完了記録");
+          if (!section) {
+            addError(`${relativePath}: missing required section \`## 完了記録\``);
+          }
+        }
+      }
     }
   }
 
@@ -197,4 +249,3 @@ main().catch((error) => {
   console.error(error);
   process.exit(1);
 });
-

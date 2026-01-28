@@ -32,7 +32,16 @@ Unit 9（Spring BootのToDo管理API）と Unit 10（Petclinic改修）が終わ
 
 次の例をそのままAIに投げてOKです（必要なら自分のコード/エラーに置き換えてください）。
 
-- 「このToDo APIの設計をレビューして。責務分割（Controller/Service/Repository/DTO/Entity）の危険箇所だけ指摘して、直し方はヒントで」
-- 「UnitテストとIntegrationテストの使い分けを、このプロジェクト（ToDo API / Petclinic）に当てはめて提案して」
-- 「性能が不安。N+1が起きる典型パターンと、Spring Data JPAでの確認方法を手順で教えて」
-- 「並列処理が必要になった。スレッド安全性のチェック観点を、このコード（貼る）でレビューして」
+```text
+「このToDo APIの設計をレビューして。責務分割（Controller/Service/Repository/DTO/Entity）の危険箇所だけ指摘して、直し方はヒントで」
+「UnitテストとIntegrationテストの使い分けを、このプロジェクト（ToDo API / Petclinic）に当てはめて提案して」
+「性能が不安。N+1が起きる典型パターンと、Spring Data JPAでの確認方法を手順で教えて」
+「並列処理が必要になった。スレッド安全性のチェック観点を、このコード（貼る）でレビューして」
+```
+
+---
+
+## 完了記録
+
+この章には提出課題はありません。
+学習が完了したら、スプレッドシートに **完了日** のみ記入してください。
