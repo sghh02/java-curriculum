@@ -83,6 +83,18 @@ Unit 8 は補講（任意）なので、必要になったときだけでOKで�
 要件通りにソースコードを書く課題は、原則 GitHub にpushしてリポジトリURLで提出してください（差分が追いやすく、AIを使った変更の確認もしやすいです）。
 どうしても難しい場合のみ、zipにまとめて提出してもOKです。
 
+### （初回だけ）developブランチを作る（main→develop→push）
+
+このカリキュラムでは、提出PRの取り込み先（base）は `develop` を前提にします。  
+GitHubに `develop` ブランチが無い場合は、最初の1回だけ `main` から作ってpushしておきましょう。
+
+```bash
+git checkout main
+git pull
+git checkout -b develop
+git push -u origin develop
+```
+
 ## Javaプロジェクトの作り方
 
 1. IDEを開く（Eclipse / IntelliJ IDEA / VS Code など）

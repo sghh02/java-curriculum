@@ -2,6 +2,12 @@
 
 > 提出ブランチ：`feature/10-basics-expressions-operators`（PRのbase：`develop`）
 
+## ゴール
+
+- この章の課題（練習問題/ハンズオン）を完了できる
+- 章で扱ったテーマを、自分の言葉で3行で説明できる
+- 作業ブランチ `feature/10-basics-expressions-operators` で作業し、PRで提出できる
+
 ## 課題：chapter 2 式と演算子
 
 この章を学習したら、以下の練習問題に取り組んでください。
@@ -58,6 +64,14 @@ public class ModificationTask {
 「この章の練習問題で詰まった。答えを丸ごとではなく、方針→ヒント→確認質問の順で教えて」
 「演算子の優先順位で間違えやすい例を3つ出して、なぜそうなるか説明して」
 ```
+
+## 完了条件（チェックリスト）
+
+- [ ] 課題（練習問題/ハンズオン）の要件を満たした
+- [ ] 自分で動作確認できた（実行結果/スクショ/ログのいずれか）
+- [ ] `feature/10-basics-expressions-operators` で作業し、コミットしてpushした
+- [ ] `feature/10-basics-expressions-operators` → `develop` のPRを作成した
+- [ ] AI総合レビューツールでレビューし、指摘を反映した（または理由を説明できる）
 
 ---
 
