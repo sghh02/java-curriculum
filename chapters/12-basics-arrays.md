@@ -1,5 +1,6 @@
 # 配列
 
+> 提出ブランチ：`feature/12-basics-arrays`（PRのbase：`develop`）
 
 ## 課題：chapter 4 配列
 

@@ -1,5 +1,6 @@
 # 関数とラムダ式
 
+> 提出ブランチ：`feature/28-practice-lambdas`（PRのbase：`develop`）
 
 ## 課題：第3章 関数とラムダ式
 

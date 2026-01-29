@@ -1,11 +1,13 @@
 # Spring Boot実践：Petclinicに機能追加（API/バリデーション/テスト）
 
+> 提出ブランチ：`feature/55-springboot-petclinic-feature-add`（PRのbase：`develop`）
+
 この章では、既存のSpring Bootアプリ（Spring Petclinic）に「小さな機能追加」を行い、テストで守ってPRとして提出します。
 
 ## 前提
 
 - 前章の手順でPetclinicが起動できている
-- 作業ブランチで作業している（例：`feature/owner-count`）
+- 作業ブランチで作業している（例：`feature/55-springboot-petclinic-feature-add`）
 
 ## ゴール
 

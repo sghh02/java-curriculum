@@ -1,5 +1,6 @@
 # 例外
 
+> 提出ブランチ：`feature/25-api-exceptions`（PRのbase：`develop`）
 
 ## 課題：chapter 17 例外
 

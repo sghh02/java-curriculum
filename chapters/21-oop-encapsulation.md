@@ -1,5 +1,6 @@
 # カプセル化
 
+> 提出ブランチ：`feature/21-oop-encapsulation`（PRのbase：`develop`）
 
 ## 課題：chapter 13 カプセル化
 

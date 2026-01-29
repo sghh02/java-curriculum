@@ -1,5 +1,7 @@
 # Spring Boot実践：Spring Petclinicを動かして構造を理解する
 
+> 提出ブランチ：`feature/54-springboot-petclinic-intro`（PRのbase：`develop`）
+
 この章では、既存のSpring Bootアプリ（Spring Petclinic）を題材に「起動できる」「構造を追える」状態を作ります。
 次の章で、実際に機能追加とテスト追加を行います。
 
@@ -27,7 +29,7 @@
 ```bash
 git clone <あなたのforkのURL>
 cd spring-petclinic
-git checkout -b feature/owner-count
+git checkout -b feature/54-springboot-petclinic-intro
 ```
 
 ## 2. テストを実行する
@@ -80,7 +82,7 @@ Petclinicは、ローカル用にH2を使っていたり、初期データをSQL
 - `./mvnw test` が通る
 - `./mvnw spring-boot:run` で起動し、`http://localhost:8080` が見える
 - `Owner` / `Pet` / `OwnerRepository` / `OwnerController` の場所（ファイル）を特定できた
-- 作業ブランチ `feature/owner-count` が作れている
+- 作業ブランチ `feature/54-springboot-petclinic-intro` が作れている
 
 ## AIに質問する（この章の例）
 

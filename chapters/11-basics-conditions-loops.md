@@ -1,5 +1,6 @@
 # 条件分岐と繰り返し
 
+> 提出ブランチ：`feature/11-basics-conditions-loops`（PRのbase：`develop`）
 
 ## 課題：chapter 3 条件分岐と繰り返し
 

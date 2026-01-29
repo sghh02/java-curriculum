@@ -1,5 +1,6 @@
 # コレクション
 
+> 提出ブランチ：`feature/24-api-collections`（PRのbase：`develop`）
 
 ## 課題：chapter 16 コレクション
 

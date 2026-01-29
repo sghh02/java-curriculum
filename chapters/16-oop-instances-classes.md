@@ -1,5 +1,6 @@
 # インスタンスとクラス
 
+> 提出ブランチ：`feature/16-oop-instances-classes`（PRのbase：`develop`）
 
 ## 課題：chapter 8 インスタンスとクラス
 

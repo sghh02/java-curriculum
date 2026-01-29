@@ -1,5 +1,6 @@
 # 高度な継承
 
+> 提出ブランチ：`feature/19-oop-advanced-inheritance`（PRのbase：`develop`）
 
 ## 課題：chapter 11 高度な継承
 
