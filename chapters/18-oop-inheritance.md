@@ -1,6 +1,6 @@
 # 継承
 
-> 提出ブランチ：`feature/18-oop-inheritance`（PRのbase：`main`）
+> 提出ブランチ：`feature/18-oop-inheritance`（PRのbase：`develop`）
 
 ## 課題：chapter 10 継承
 

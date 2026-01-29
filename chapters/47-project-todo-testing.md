@@ -1,6 +1,6 @@
 # 制作物：ToDo管理（コンソール版）をJUnitでテストする
 
-> 提出ブランチ：`feature/47-project-todo-testing`（PRのbase：`main`）
+> 提出ブランチ：`feature/47-project-todo-testing`（PRのbase：`develop`）
 
 この章は、Unit 7（単体テストとアサーション）を制作物に反映するチェックポイントです。
 

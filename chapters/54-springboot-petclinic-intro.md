@@ -1,6 +1,6 @@
 # Spring Boot実践：Spring Petclinicを動かして構造を理解する
 
-> 提出ブランチ：`feature/54-springboot-petclinic-intro`（PRのbase：`main`）
+> 提出ブランチ：`feature/54-springboot-petclinic-intro`（PRのbase：`develop`）
 
 この章では、既存のSpring Bootアプリ（Spring Petclinic）を題材に「起動できる」「構造を追える」状態を作ります。
 次の章で、実際に機能追加とテスト追加を行います。

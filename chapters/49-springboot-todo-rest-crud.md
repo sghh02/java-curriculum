@@ -1,6 +1,6 @@
 # Spring Boot：ToDo管理APIのCRUDエンドポイント
 
-> 提出ブランチ：`feature/49-springboot-todo-rest-crud`（PRのbase：`main`）
+> 提出ブランチ：`feature/49-springboot-todo-rest-crud`（PRのbase：`develop`）
 
 この章では、DBの前に「HTTP/JSONでCRUDができる」状態を作ります（保存先は一旦メモリでもOK）。
 

@@ -1,6 +1,6 @@
 # さまざまなクラス機構
 
-> 提出ブランチ：`feature/17-oop-class-mechanisms`（PRのbase：`main`）
+> 提出ブランチ：`feature/17-oop-class-mechanisms`（PRのbase：`develop`）
 
 ## 課題：chapter 9 さまざまなクラス機構
 

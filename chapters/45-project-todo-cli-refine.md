@@ -1,6 +1,6 @@
 # 制作物：ToDo管理（コンソール版）にコレクション・例外・日時を導入する
 
-> 提出ブランチ：`feature/45-project-todo-cli-refine`（PRのbase：`main`）
+> 提出ブランチ：`feature/45-project-todo-cli-refine`（PRのbase：`develop`）
 
 この章は、Unit 4（標準API活用）までに学んだ「コレクション・例外・文字列/日付」などを、制作物に反映するチェックポイントです。
 

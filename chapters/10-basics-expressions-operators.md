@@ -1,6 +1,6 @@
 # 式と演算子
 
-> 提出ブランチ：`feature/10-basics-expressions-operators`（PRのbase：`main`）
+> 提出ブランチ：`feature/10-basics-expressions-operators`（PRのbase：`develop`）
 
 ## 課題：chapter 2 式と演算子
 

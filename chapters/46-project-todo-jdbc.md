@@ -1,6 +1,6 @@
 # 制作物：ToDo管理（コンソール版）をDB（JDBC）対応する
 
-> 提出ブランチ：`feature/46-project-todo-jdbc`（PRのbase：`main`）
+> 提出ブランチ：`feature/46-project-todo-jdbc`（PRのbase：`develop`）
 
 この章は、Unit 6（データベースアクセス）までに学んだJDBCを、制作物に適用するチェックポイントです。
 

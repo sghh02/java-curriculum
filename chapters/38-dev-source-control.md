@@ -1,6 +1,6 @@
 # ソースコードの管理と共有
 
-> 提出ブランチ：`feature/38-dev-source-control`（PRのbase：`main`）
+> 提出ブランチ：`feature/38-dev-source-control`（PRのbase：`develop`）
 
 この章では、課題提出で必要な「gitの最小セット」を扱います。
 細かいコマンド暗記は不要で、困ったらAIにエラーと状況を貼ってOKです。

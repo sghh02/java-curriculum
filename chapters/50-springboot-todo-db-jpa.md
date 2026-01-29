@@ -1,6 +1,6 @@
 # Spring Boot：ToDo管理APIのDB（JPA）対応
 
-> 提出ブランチ：`feature/50-springboot-todo-db-jpa`（PRのbase：`main`）
+> 提出ブランチ：`feature/50-springboot-todo-db-jpa`（PRのbase：`develop`）
 
 この章では、メモリ実装をDB実装に置き換えます。Spring Data JPAとH2を使うと、最小構成で進められます。
 

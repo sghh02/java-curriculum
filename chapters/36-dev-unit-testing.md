@@ -1,6 +1,6 @@
 # 単体テストとアサーション
 
-> 提出ブランチ：`feature/36-dev-unit-testing`（PRのbase：`main`）
+> 提出ブランチ：`feature/36-dev-unit-testing`（PRのbase：`develop`）
 
 このカリキュラムでは、制作物（ToDo管理）を育てながら学びます。
 単体テストは「変更しても壊れていない」ことを速く確認するための仕組みです。

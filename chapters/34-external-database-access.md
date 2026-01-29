@@ -1,6 +1,6 @@
 # データベースアクセス
 
-> 提出ブランチ：`feature/34-external-database-access`（PRのbase：`main`）
+> 提出ブランチ：`feature/34-external-database-access`（PRのbase：`develop`）
 
 このUnitでは、JDBCで「DBに接続してSQLを実行する」を体験します。
 次の章（制作物：ToDo管理のDB対応）で使う前準備です。

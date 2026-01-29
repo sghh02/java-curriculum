@@ -1,6 +1,6 @@
 # 制作物：ToDo管理（コンソール版）を作る
 
-> 提出ブランチ：`feature/43-project-todo-cli`（PRのbase：`main`）
+> 提出ブランチ：`feature/43-project-todo-cli`（PRのbase：`develop`）
 
 この章は、Unit 2 までに学んだ「変数・条件分岐・繰り返し・配列・メソッド・複数クラス」を使って、1つの制作物を作るチェックポイントです。
 

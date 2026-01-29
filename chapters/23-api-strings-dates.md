@@ -1,6 +1,6 @@
 # 文字列と日付の扱い
 
-> 提出ブランチ：`feature/23-api-strings-dates`（PRのbase：`main`）
+> 提出ブランチ：`feature/23-api-strings-dates`（PRのbase：`develop`）
 
 ## 課題：chapter 15 文字列と日付の扱い
 

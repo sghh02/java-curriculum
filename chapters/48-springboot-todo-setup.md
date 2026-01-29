@@ -1,6 +1,6 @@
 # Spring Boot：ToDo管理APIのプロジェクト作成
 
-> 提出ブランチ：`feature/48-springboot-todo-setup`（PRのbase：`main`）
+> 提出ブランチ：`feature/48-springboot-todo-setup`（PRのbase：`develop`）
 
 この章から、制作物を「Spring BootのREST API」として作り直します。最終ゴールは「CRUD API＋DB＋テスト」です。
 

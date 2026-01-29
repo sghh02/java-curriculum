@@ -1,6 +1,6 @@
 # 制作物：ToDo管理（コンソール版）をオブジェクト指向でリファクタする
 
-> 提出ブランチ：`feature/44-project-todo-oop-refactor`（PRのbase：`main`）
+> 提出ブランチ：`feature/44-project-todo-oop-refactor`（PRのbase：`develop`）
 
 この章は、Unit 3（オブジェクト指向）までに学んだ内容を、制作物に反映するチェックポイントです。
 
