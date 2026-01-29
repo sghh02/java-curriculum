@@ -73,6 +73,37 @@ function analyzeMarkdown(markdown) {
   return { firstNonEmptyLine, firstH1, h1Count };
 }
 
+function extractH2Headings(markdown) {
+  const lines = markdown.replace(/^\uFEFF/, "").split(/\r?\n/);
+  let inFence = false;
+  let fenceMarker = null;
+  const headings = [];
+
+  for (const rawLine of lines) {
+    const line = rawLine.replace(/\s+$/, "");
+
+    const fenceMatch = line.match(/^(```|~~~)/);
+    if (fenceMatch) {
+      const marker = fenceMatch[1];
+      if (!inFence) {
+        inFence = true;
+        fenceMarker = marker;
+      } else if (marker === fenceMarker) {
+        inFence = false;
+        fenceMarker = null;
+      }
+      continue;
+    }
+
+    if (inFence) continue;
+
+    const h2Match = line.match(/^##\s+(.+?)\s*$/);
+    if (h2Match) headings.push(h2Match[1]);
+  }
+
+  return headings;
+}
+
 async function fileExists(filePath) {
   try {
     const stat = await fs.stat(filePath);
@@ -187,6 +218,7 @@ async function main() {
 
       const markdown = await fs.readFile(absolutePath, "utf8");
       const { firstNonEmptyLine, firstH1, h1Count } = analyzeMarkdown(markdown);
+      const h2Headings = extractH2Headings(markdown);
 
       if (firstNonEmptyLine === null) {
         addError(`${relativePath}: file is empty`);
@@ -217,6 +249,19 @@ async function main() {
       // Ensure assignment/completion section exists, and branch naming follows the curriculum rule.
       if (typeof hasAssignment === "boolean") {
         if (hasAssignment) {
+          if (!h2Headings.includes("ゴール")) {
+            addError(`${relativePath}: missing required section \`## ゴール\``);
+          }
+
+          const hasCompletionChecklist = h2Headings.some((heading) =>
+            /^(完了条件|評価基準)(?:（チェックリスト）)?$/.test(heading),
+          );
+          if (!hasCompletionChecklist) {
+            addError(
+              `${relativePath}: missing required section \`## 完了条件（チェックリスト）\` (or \`## 評価基準（チェックリスト）\`)`,
+            );
+          }
+
           const section = extractH2Section(markdown, "課題提出");
           if (!section) {
             addError(`${relativePath}: missing required section \`## 課題提出\``);

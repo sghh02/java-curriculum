@@ -97,6 +97,14 @@ public class Main {
 「SQLインジェクションを、悪い例→良い例（PreparedStatement）で説明して」
 ```
 
+## 完了条件（チェックリスト）
+
+- [ ] 課題（練習問題/ハンズオン）の要件を満たした
+- [ ] 自分で動作確認できた（実行結果/スクショ/ログのいずれか）
+- [ ] `feature/34-external-database-access` で作業し、コミットしてpushした
+- [ ] `feature/34-external-database-access` → `develop` のPRを作成した
+- [ ] AI総合レビューツールでレビューし、指摘を反映した（または理由を説明できる）
+
 ---
 
 ## 課題提出
