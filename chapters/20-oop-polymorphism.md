@@ -1,5 +1,6 @@
 # 多様性
 
+> 提出ブランチ：`feature/20-oop-polymorphism`（PRのbase：`main`）
 
 ## 課題：chapter 12 多様性
 

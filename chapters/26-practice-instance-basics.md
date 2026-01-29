@@ -1,5 +1,6 @@
 # インスタンスの基本操作
 
+> 提出ブランチ：`feature/26-practice-instance-basics`（PRのbase：`main`）
 
 ## 課題：第1章 インスタンスの基本操作
 

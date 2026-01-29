@@ -1,5 +1,6 @@
 # メソッド
 
+> 提出ブランチ：`feature/13-basics-methods`（PRのbase：`main`）
 
 ## 課題：chapter 5 メソッド
 

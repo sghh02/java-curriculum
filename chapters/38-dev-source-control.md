@@ -1,5 +1,7 @@
 # ソースコードの管理と共有
 
+> 提出ブランチ：`feature/38-dev-source-control`（PRのbase：`main`）
+
 この章では、課題提出で必要な「gitの最小セット」を扱います。
 細かいコマンド暗記は不要で、困ったらAIにエラーと状況を貼ってOKです。
 
@@ -30,13 +32,13 @@ git commit -m "Describe change"
 ### 3. ブランチで作業（推奨）
 
 ```bash
-git checkout -b feature/todo-step1
+git checkout -b feature/38-dev-source-control
 ```
 
 ### 4. GitHubへpush
 
 ```bash
-git push -u origin feature/todo-step1
+git push -u origin feature/38-dev-source-control
 ```
 
 ## よくあるつまずき（最小の対処）

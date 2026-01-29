@@ -1,5 +1,6 @@
 # Javaを支えるクラスたち
 
+> 提出ブランチ：`feature/22-api-core-classes`（PRのbase：`main`）
 
 ## 課題：chapter 14 Javaを支えるクラスたち
 

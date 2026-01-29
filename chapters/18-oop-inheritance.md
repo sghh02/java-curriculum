@@ -1,5 +1,6 @@
 # 継承
 
+> 提出ブランチ：`feature/18-oop-inheritance`（PRのbase：`main`）
 
 ## 課題：chapter 10 継承
 

@@ -1,5 +1,6 @@
 # さまざまな種類のクラス
 
+> 提出ブランチ：`feature/27-practice-class-types`（PRのbase：`main`）
 
 ## 課題：第2章 さまざまな種類のクラス
 

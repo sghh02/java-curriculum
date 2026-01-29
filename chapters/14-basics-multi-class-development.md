@@ -1,5 +1,6 @@
 # 複数クラスを用いた開発
 
+> 提出ブランチ：`feature/14-basics-multi-class-development`（PRのbase：`main`）
 
 ## 課題：chapter 6 複数クラスを用いた開発
 

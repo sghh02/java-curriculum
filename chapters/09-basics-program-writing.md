@@ -1,5 +1,6 @@
 # プログラムの書き方
 
+> 提出ブランチ：`feature/09-basics-program-writing`（PRのbase：`main`）
 
 ## 課題：chapter 1 プログラムの書き方
 
