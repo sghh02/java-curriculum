@@ -122,7 +122,9 @@ async function main() {
   const indexPath = path.join(repoRoot, "index.json");
 
   const errors = [];
+  const warnings = [];
   const addError = (message) => errors.push(message);
+  const addWarning = (message) => warnings.push(message);
 
   let indexRaw;
   try {
@@ -148,6 +150,18 @@ async function main() {
   const chapters = isPlainObject(indexJson) ? indexJson.chapters : null;
   if (!Array.isArray(chapters)) {
     addError("index.json: expected `chapters` to be an array");
+  }
+
+  const pathToTitle = new Map();
+  for (const chapter of chapters ?? []) {
+    if (!isPlainObject(chapter)) continue;
+    if (!Array.isArray(chapter.items)) continue;
+    for (const item of chapter.items) {
+      if (!isPlainObject(item)) continue;
+      if (typeof item.path === "string" && typeof item.title === "string") {
+        pathToTitle.set(item.path, item.title);
+      }
+    }
   }
 
   const seenItemIds = new Map();
@@ -278,6 +292,57 @@ async function main() {
           }
         }
       }
+
+      // Ensure internal chapter links are valid for the viewer (path-based navigation).
+      {
+        const lines = markdown.split(/\r?\n/);
+        let inFence = false;
+        for (let i = 0; i < lines.length; i++) {
+          const line = lines[i];
+          if (line.startsWith("```")) {
+            inFence = !inFence;
+            continue;
+          }
+          if (inFence) continue;
+
+          const linkMatches = line.matchAll(
+            /\[([^\]]+)\]\(((?:\.\/|chapters\/)[^)\s]+?\.md)\)/g
+          );
+          for (const match of linkMatches) {
+            const label = match[1].trim();
+            const target = match[2].trim();
+            const canonical = target.startsWith("./") ? `chapters/${target.slice(2)}` : target;
+            const expected = pathToTitle.get(canonical);
+            if (!expected) {
+              addError(`${relativePath}: link target \`${target}\` does not match any lesson path in index.json at line ${i + 1}.`);
+              continue;
+            }
+            if (label !== expected) {
+              const recommendedTarget = `./${path.basename(canonical)}`;
+              addWarning(
+                `${relativePath}: link text should match sidebar title ([${expected}](${recommendedTarget})) at line ${i + 1}.`
+              );
+            }
+            if (target.startsWith("chapters/")) {
+              addError(
+                `${relativePath}: use relative links like \`./${path.basename(canonical)}\` instead of \`${target}\` at line ${i + 1}.`
+              );
+            }
+          }
+
+          // Disallow visible raw chapter paths (students shouldn't see file names).
+          const stripped = line.replace(
+            /\[[^\]]*\]\(((?:\.\/|chapters\/)[^)\s]+?\.md)\)/g,
+            ""
+          );
+          const rawMatch = stripped.match(/(?:chapters\/|\.\/)[^\s)]+?\.md/);
+          if (rawMatch) {
+            addWarning(
+              `${relativePath}: avoid showing raw chapter path \`${rawMatch[0]}\` at line ${i + 1} (use a title link).`
+            );
+          }
+        }
+      }
     }
   }
 
@@ -285,6 +350,11 @@ async function main() {
     console.error(`Found ${errors.length} issue(s):`);
     for (const message of errors) console.error(`- ${message}`);
     process.exit(1);
+  }
+
+  if (warnings.length > 0) {
+    console.warn(`Warnings: ${warnings.length}`);
+    for (const message of warnings) console.warn(`- ${message}`);
   }
 
   console.log("OK: index.json and chapters are consistent.");
