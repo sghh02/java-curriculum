@@ -1,6 +1,6 @@
 # java-curriculum
 
-Java学習用カリキュラム（Markdown）です。`index.json` が目次・メタ情報、`chapters/` が本文になります。
+Java学習用プログラム（Markdown）です。`index.json` が目次・メタ情報、`chapters/` が本文になります。
 
 ## Validate
 
@@ -12,5 +12,5 @@ node scripts/validate-index.mjs
 
 ## Structure
 
-- `index.json`: カリキュラム構造（Unit/lesson）
+- `index.json`: プログラム構造（Unit/lesson）
 - `chapters/*.md`: レッスン本文

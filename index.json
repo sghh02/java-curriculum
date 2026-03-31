@@ -1,6 +1,6 @@
 {
   "curriculumId": "java-basic",
-  "title": "Java基礎カリキュラム",
+  "title": "Java基礎プログラム",
   "description": "Javaの基礎文法からオブジェクト指向、標準API、データベースアクセス、テスト、設計、Spring BootによるToDo管理API開発と既存アプリの改修までを学びます。",
   "chapters": [
     {
@@ -16,7 +16,7 @@
       "items": [
         { "id": "web-service-technology-roles-overview", "title": "Webサービスの中身をざっくり理解する", "path": "chapters/01-web-service-technology-roles-overview.md", "estimatedMinutes": 45, "hasAssignment": false },
         { "id": "intro-required-knowledge", "title": "Javaエンジニアとして現場に行くためにはどんな知識が必要？", "path": "chapters/02-intro-required-knowledge.md", "estimatedMinutes": 20, "hasAssignment": false },
-        { "id": "intro-avoid-dropout", "title": "カリキュラムの挫折を防ぐためにやるべきこと", "path": "chapters/05-intro-avoid-dropout.md", "estimatedMinutes": 20, "hasAssignment": false }
+        { "id": "intro-avoid-dropout", "title": "プログラムの挫折を防ぐためにやるべきこと", "path": "chapters/05-intro-avoid-dropout.md", "estimatedMinutes": 20, "hasAssignment": false }
       ]
     },
     {
@@ -24,7 +24,7 @@
       "title": "Unit 2: Javaの準備と基礎文法",
       "items": [
         { "id": "basics-environment-setup", "title": "環境構築", "path": "chapters/06-basics-environment-setup.md", "estimatedMinutes": 45, "hasAssignment": false },
-        { "id": "basics-curriculum-guide", "title": "カリキュラムの進め方", "path": "chapters/07-basics-curriculum-guide.md", "estimatedMinutes": 20, "hasAssignment": false },
+        { "id": "basics-curriculum-guide", "title": "プログラムの進め方", "path": "chapters/07-basics-curriculum-guide.md", "estimatedMinutes": 20, "hasAssignment": false },
         { "id": "basics-program-writing", "title": "プログラムの書き方", "path": "chapters/09-basics-program-writing.md", "estimatedMinutes": 60, "hasAssignment": true },
         { "id": "basics-expressions-operators", "title": "式と演算子", "path": "chapters/10-basics-expressions-operators.md", "estimatedMinutes": 60, "hasAssignment": true },
         { "id": "basics-conditions-loops", "title": "条件分岐と繰り返し", "path": "chapters/11-basics-conditions-loops.md", "estimatedMinutes": 60, "hasAssignment": true },

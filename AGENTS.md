@@ -1,7 +1,7 @@
 # リポジトリ運用ガイドライン
 
 ## プロジェクト構成とモジュールの整理
-- `index.json` はカリキュラムのナビゲーション（Unit/lesson のメタデータ）を定義します。
+- `index.json` はプログラムのナビゲーション（Unit/lesson のメタデータ）を定義します。
 - `chapters/*.md` には、利用側アプリでそのままレンダリングされるレッスン本文が入ります。
 - `scripts/validate-index.mjs` は `index.json` と `chapters/` の整合性（パス存在・タイトル一致など）を検証します。
 - `AGENTS.md` には編集・PR のルールが書かれています（このファイル）。
@@ -15,7 +15,7 @@
 ## コーディングスタイルと命名規則
 - Markdown: 各レッスンは先頭行を単一の H1（`# ...`）から開始し、対応する `index.json` の項目 `title` と一致させます。見出しは `##`/`###`、コードブロックは言語タグ付き（例: `bash`, `json`）を使います。
 - ファイル名: `chapters/NN-topic-slug.md`（例: `chapters/00-ai-learning.md`）。公開後は極力変更しません。
-- ID: `kebab-case` で、カリキュラム内で一意かつ不変（例: `web-service-technology-roles-overview`）。
+- ID: `kebab-case` で、プログラム内で一意かつ不変（例: `web-service-technology-roles-overview`）。
 - JSON: 厳密な JSON のみ（コメント不可、末尾カンマ不可）。インデントは 2 スペース、文字列はダブルクォートを推奨します。
 
 ## テスト指針
