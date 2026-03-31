@@ -55,7 +55,7 @@
 - [ ] 自分で動作確認できた（実行結果/スクショ/ログのいずれか）
 - [ ] `feature/27-practice-class-types` で作業し、コミットしてpushした
 - [ ] `feature/27-practice-class-types` → `develop` のPRを作成した
-- [ ] AI総合レビューツールでレビューし、指摘を反映した（または理由を説明できる）
+- [ ] AIプログラムレビューを実行し、指摘を反映した（または理由を説明できる）
 
 ---
 
@@ -65,5 +65,5 @@
 
 1. 上記の練習問題を完了する
 2. GitHub で `feature/27-practice-class-types` ブランチを作成し、PRを作成
-3. [AI総合レビューツール](https://ai.studio/apps/drive/1AMqIqU4Bio4te7AWh5dly1Qzp7CesqP9?fullscreenApplet=true) でレビューを実行
+3. [AIプログラムレビュー](https://ai.studio/apps/84d224cb-7de1-44fb-995b-9a5917d25603?fullscreenApplet=true) を実行
 4. 問題がなければ、進捗ダッシュボードで **PR URL** と **完了日** を記録
