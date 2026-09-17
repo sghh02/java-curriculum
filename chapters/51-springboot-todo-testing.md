@@ -161,5 +161,6 @@ class TaskApiIntegrationTest {
 
 1. 上記のハンズオン課題を完了する
 2. GitHub で `feature/51-springboot-todo-testing` ブランチを作成し、PRを作成
-3. [AIプログラムレビュー](https://ai.studio/apps/84d224cb-7de1-44fb-995b-9a5917d25603?fullscreenApplet=true) を実行
-4. 問題がなければ、進捗ダッシュボードで **PR URL** と **完了日** を記録
+3. 以下の **PRレビュー** を実行する
+4. レビューコメントをすべてコピーして、PR のコメントに貼る
+5. 問題がなければ、進捗ダッシュボードで **PR URL** と **完了日** を記録
